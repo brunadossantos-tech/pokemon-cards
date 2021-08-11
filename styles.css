@@ -1,0 +1,77 @@
+body {
+  background-color: #ffffb3;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-family: "Bangers", cursive;
+  color: #ff3300;
+  font-size: 54px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.container {
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.card {
+  list-style: none;
+  padding: 40px;
+  background-color: #e6fff2;
+  color: #222;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.card:hover {
+  animation: bounce 0.5s linear;
+}
+
+@keyframes bounce {
+  20% {
+    transform: translateY(-6px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  60% {
+    transform: translateY(-2px);
+  }
+  80% {
+    transform: translateY(0px);
+  }
+}
+
+.card-title {
+  font-family: "Bangers", cursive;
+  font-size: 32px;
+  font-weight: normal;
+  margin-bottom: 0px;
+}
+
+.card-subtitle {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.card-image {
+  height: 180px;
+  margin: 0 auto;
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+  margin-left: 10px;
+  margin-top: -5px;
+}
+
+#pokedex {
+  padding-inline-start: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+}
